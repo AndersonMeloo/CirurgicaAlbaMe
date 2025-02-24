@@ -1,0 +1,126 @@
+.container__apresentacao {
+    background: linear-gradient(to bottom, #F7FCFE, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE);
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao-lt {
+    padding: 8rem 0;
+    justify-content: center;
+}
+
+.apresentacao-titulo {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #68709c;
+}
+
+.apresentacao-texto {
+    width: 50%;
+}
+
+.apres-txt1 {
+    padding: 1rem 0;
+    font-family: var(--font-text);
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #586197;
+}
+
+.apres-txt2 {
+    padding-bottom: 1rem;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    color: black;
+}
+
+.apresentacao-img {
+    width: 60%;
+}
+
+.apresentacao-ltd {
+    padding: 8rem 0;
+}
+
+.apres-lt-text {
+    padding: 1rem 0 1rem 0;
+    color: #68709c;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.apres-lt-text:hover {
+    font-size: 1.7rem;
+    color: #586197;
+}
+
+.apres-btn1 {
+    width: 80%;
+    border: none;
+    background: #7782bf;
+    color: white;
+    font-family: var(--font-text);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem 3rem 0 0;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.apres-btn2 {
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+
+.apres-btn1:hover {
+    background: #68709c;
+    transition: .6s;
+    width: 90%;
+}
+
+
+@media screen and (min-width: 330px) and (max-width: 1000px) {
+    .container__apresentacao {
+        display: block;
+        text-align: center;
+    }
+
+    .apresentacao-img {
+        width: 60%;
+    }
+
+    .apresentacao-lt {
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao-texto {
+        text-align: center;
+        
+    }
+
+    .apresentacao-ltd {
+        padding: 1.5rem 0;
+    }
+
+    .apres-btn1 {
+        width: 60%;
+        margin: auto;
+        margin-top: 0.5rem;
+    }
+
+    .apres-btn1:hover {
+        width: 70%;
+    }
+
+    .apresentacao-texto {
+        margin: 1rem;
+    }
+}

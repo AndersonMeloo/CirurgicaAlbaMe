@@ -1,0 +1,118 @@
+.produtos-titulo {
+    text-align: center;
+    margin: 2.5rem 0;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.produtos-subtitulo-sub {
+    text-align: center;
+    margin: 6rem 0 2rem;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    color: black;
+}
+
+.produtos-texto {
+    color: var(--color-principal);
+    font-family: var(--font-title);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    margin: 1rem;
+    letter-spacing: 1px;
+}
+
+.produtos-botao {
+    background: var(--color-azul-medio);
+    margin: 1rem;
+    padding: 0.6rem 3rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font-text);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 1);
+}
+
+.produtos-botao:hover {
+    letter-spacing: 2px;
+}
+
+.produtos-bloco {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0 6rem;
+    text-align: center;
+}
+
+.bloco-img-all {
+    cursor: pointer;
+}
+
+.bloco2 {
+    width: 18rem;
+    height: 18rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 340px) and (max-width: 700px) {
+    
+    .produtos-bloco {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .produtos-bloco1 {
+        width: cal(50% - 20px);
+        /* Define a largura para formar 2 colunas */
+
+        margin: 3rem;
+        border: none;
+    }
+
+    .bloco2 {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1250px) {
+    
+    .produtos-bloco {
+        grid-template-columns: repeat(1, 1fr); /* Em telas entre 700px e 1250px, uma coluna */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .produtos-bloco1 {
+        border: none;
+        width: calc(50% - 20px);
+        margin: 4rem;
+    }
+
+    .bloco2 {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .produtos-botao {
+        width: 20%;
+    }
+}

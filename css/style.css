@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url(./estilos-pagina/carrossel.css);
+@import url(./estilos-pagina/apresentacao.css);
+@import url(./estilos-pagina/destaque.css);
+@import url(./estilos-pagina/produtos-geral.css);
+@import url(./estilos-pagina/parallax.css);
+@import url(./estilos-pagina/rodape.css);
+/* @import url(./estilos-pagina/login-cadastro.css); */
+@import url(./estilos-pagina/login-cadastro.css);
+
+:root {
+    --font-title: 'Krona one', sans-serif;
+    --font-text: 'Montserrat', sans-serif;
+
+    --color-principal: black;
+    --color-azul-claro: #bebebe;
+    --color-azul-medio: #68709c;
+    --color-azul-escuro: #586197;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: linear-gradient(to bottom, #F7FCFE, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE); */
+}
+
+/* background: linear-gradient(to bottom, #F7FCFE, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE); */
+
+/* Header */
+
+.topo {
+    position: -webkit-sticky;
+    /* Para navegadores mais antigos */
+    position: sticky;
+    /* Fixar no topo quando rolar */
+    top: 0;
+    /* Fixa o cabeçalho no topo */
+    left: 0;
+    /* Fixa no canto esquerdo */
+    width: 100%;
+    /* Ocupa toda a largura da tela */
+    background-color: #fff;
+    box-shadow: rgb(0, 0, 0, 0.50);
+    text-align: center;
+    z-index: 1000;
+    /* Fica acima de outros elementos */
+    color: #FFF;
+    border-radius: 10px;
+}
+
+
+.topo-header {
+    background: var(--color-azul-escuro);
+    font-family: var(--font-text);
+    letter-spacing: 1px;
+    font-size: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-text {
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1rem;
+}
+
+.navbar-text {
+    cursor: pointer;
+}
+
+.login-cadastro-espacamento {
+    margin: 0 12px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: linear-gradient(to bottom, #F7FCFE, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE);
+}
+
+.dropdown-item {
+    transition: .4s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-azul-medio);
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+}
+
+.container-fluid {
+    background: linear-gradient(to bottom, #F7FCFE, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE);
+}
+
+.logo-site {
+    width: 6%;
+    font-size: 14px;
+}
+
+.navbar-toggler {
+    margin: 0 auto;
+}
+
+.collapse .navbar-collapse {
+    flex-basis: none;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+    }
+}

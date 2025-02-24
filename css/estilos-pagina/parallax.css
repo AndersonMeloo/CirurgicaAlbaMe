@@ -1,0 +1,19 @@
+.parallax, .parallax2 {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+.parallax {
+    background-image: url('/projetocirurgicaalba/imagens/parallax/parallax1.jpg');
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.parallax2 {
+    background-image: url('/projetocirurgicaalba/imagens/parallax/parallax2.jpg');
+}
+

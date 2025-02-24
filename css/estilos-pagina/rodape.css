@@ -1,0 +1,83 @@
+.rodape {
+    height: 300px;
+    width: 100%;
+    background: var(--color-azul-escuro);
+    /* margin: 7rem 0 0; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0 0;
+}
+
+.rodape div {
+    width: 50%;
+}
+
+.rodape div h1,
+h2,
+h3,
+h4 {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.rodape div p {
+    cursor: pointer;
+    color: var(--color-azul-claro);
+    font-size: 14px;
+}
+
+.direitos {
+    background: var(--color-azul-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 1px;
+    flex-direction: column;
+}
+
+.direitos-text {
+    margin: 10px 0;
+}
+
+.rodape div p:hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.rodape div p::after {
+    
+    /* content: ''; cria um "elemento invisível" que pode ser manipulado com outras propriedades CSS. */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #CCC;
+    transition: width 0.3s ease; /* A linha vai aparecer com animação */
+}
+
+.rodape div p:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 810px) {
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        padding: 1rem 0;
+    }
+
+    .direitos {
+        font-size: 14px;
+    }
+}

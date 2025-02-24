@@ -1,0 +1,10 @@
+.carousel-item {
+    height: 600px;
+    /* A altura que você desejar */
+}
+
+.carousel-item img {
+    height: 100%;
+    /* A imagem irá ocupar toda a altura do item */
+    object-fit: cover;
+}
