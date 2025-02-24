@@ -27,7 +27,8 @@ try {
 
     // PEGA O ERRO CASO DE ALGUMA COISA DE ERRADO NA HORA DE CRIAR A CONEXÃO
     echo json_encode(['sucess' => false, "message" => 'Erro de conexão: ' . $e->getMessage()]);
-  
+    // exit; ENCERRA O SCRIPT
+    exit;
 }
 
 ?>
