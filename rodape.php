@@ -34,6 +34,10 @@ $direitosAutorais = "© [2025] Cirúrgica Alba ME. Todos os direitos reservados.
         <p>Trocas e Devoluções</p>
     </div>
 
+    <div>
+        <h1>Teste</h1>
+    </div>
+
 </section>
 
 <div class="direitos">
