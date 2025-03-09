@@ -51,7 +51,7 @@ $imagemProdutos8 = "./imagens/imagens-produtos-geral/Andadores.jpg";
 <!-- Configurações Gerais  -->
 <?php include_once('configuracoes-gerais.php'); ?>
 
-<!-- < ?php include_once('header.php'); ?> -->
+<?php include_once('header.php'); ?>
 <?php include('carrossel.php'); ?>
 <?php include('apresentacao.php'); ?>
 <?php include('parallax.php'); ?>
@@ -76,5 +76,5 @@ $imagemProdutos8 = "./imagens/imagens-produtos-geral/Andadores.jpg";
     require_once() - 
     Mesma lógica de include_once, mas a diferença de que se o arquivo não for encontrado, gera um erro fatal (Fatal Error) e o script para
 -->
-    
+
 <!-- Restante do conteúdo da página -->
