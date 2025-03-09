@@ -51,7 +51,7 @@ $imagemProdutos8 = "./imagens/imagens-produtos-geral/Andadores.jpg";
 <!-- Configurações Gerais  -->
 <?php include_once('configuracoes-gerais.php'); ?>
 
-<!-- < ?php include_once('header.php'); ?> -->
+<?php include_once('header.php'); ?>
 <?php include('carrossel.php'); ?>
 <?php include('apresentacao.php'); ?>
 <?php include('parallax.php'); ?>
