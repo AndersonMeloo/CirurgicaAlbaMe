@@ -70,3 +70,19 @@ try {
      */
     echo json_encode(['sucess' => false, "message" => 'Erro ao cadastrar o usuário:' . $e->getMessage()]);
 }
+
+
+?>
+
+<!-- 
+
+        FORMULARIO - FALE CONOSCO
+
+$nome = $_POST['nome'] ?? null;
+$email = $_POST['email'] ?? null;
+$telefone = $_POST['telefone'] ?? null;
+$numPedido = $_POST['numPedido'] ?? null;
+$mensagem = $_POST['mensagem'] ?? null;
+
+
+-->
