@@ -7,6 +7,19 @@ require "api.php";
 $email = $_POST['email'] ?? null;
 $senha = $_POST['senha'] ?? null;
 
+$pjoucl = $_POST['pjouclt'] ?? null;
+$nome = $_POST['nome'] ?? null;
+$cpf = $_POST['cpf'] ?? null;
+$celular = $_POST['celular'] ?? null;
+$sexo = $_POST['sexo'] ?? null;
+$datanascimento = $_POST['datanascimento'] ?? null;
+$cep = $_POST['cep'] ?? null;
+$endereco = $_POST['endereco'] ?? null;
+$complemento = $_POST['complemento'] ?? null;
+$bairro = $_POST['bairro'] ?? null;
+$cidade = $_POST['cidade'] ?? null;
+$estado = $_POST['estado'] ?? null;
+
 
 // SE NÃO TIVER VALOR CAI NO NULL E É CONSIDERADO FALSO E CAI NO ERRO
 if (!$email || !$senha) {
