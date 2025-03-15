@@ -7,7 +7,7 @@ require "api.php";
 $email = $_POST['email'] ?? null;
 $senha = $_POST['senha'] ?? null;
 
-$pjoucl = $_POST['pjouclt'] ?? null;
+$pjouclt = $_POST['pjouclt'] ?? null;
 $nome = $_POST['nome'] ?? null;
 $cpf = $_POST['cpf'] ?? null;
 $celular = $_POST['celular'] ?? null;
@@ -22,15 +22,15 @@ $estado = $_POST['estado'] ?? null;
 
 
 // SE NÃO TIVER VALOR CAI NO NULL E É CONSIDERADO FALSO E CAI NO ERRO
-if (!$email || !$senha) {
-    echo json_encode(['sucess' => false, 'message' => 'Email e senha são obrigatórios']);
+if (!$email || !$senha || $pjouclt || $nome || $cpf || $celular || $sexo || $datanascimento || $cep || $endereco || $complemento || $bairro || $cidade || $estado) {
+    echo json_encode(['sucess' => false, 'message' => 'Preencha todos os campos']);
     exit;
 };
 
 /**
  * passowrd_hash - É uma função PHP que é usada para gerar um 'hash' seguro
  * 'hash' É uma versão CRIPTOGRAFADA e IRREVERSÍVEL da senha ORIGINAL
- * A funlão usa 'hashing fortes', como BCRYPT, para GARANTIR que as SENHAS sejam ARMAZENADAS DE MANEIRA SEGURA
+ * A função usa 'hashing fortes', como BCRYPT, para GARANTIR que as SENHAS sejam ARMAZENADAS DE MANEIRA SEGURA
  */
 $senhaHash = password_hash($senha, PASSWORD_BCRYPT);
 
