@@ -4,11 +4,9 @@ require "api.php";
 // LOGIN-CADASTRO.PHP
 // RESPONSÁVEL POR PEGAR O EMAIL E A SENHA DO FORMULÁRIO
 //  SE VALOR EMAIL E SENHA NÃO TIVER VALORES CAI NO ERRO / EMAIL E SENHAS SÃO OBRIGATORIOS
+$nome = $_POST['nome'] ?? null;
 $email = $_POST['email'] ?? null;
 $senha = $_POST['senha'] ?? null;
-
-$pjouclt = $_POST['pjouclt'] ?? null;
-$nome = $_POST['nome'] ?? null;
 $cpf = $_POST['cpf'] ?? null;
 $celular = $_POST['celular'] ?? null;
 $sexo = $_POST['sexo'] ?? null;
@@ -19,6 +17,7 @@ $complemento = $_POST['complemento'] ?? null;
 $bairro = $_POST['bairro'] ?? null;
 $cidade = $_POST['cidade'] ?? null;
 $estado = $_POST['estado'] ?? null;
+$pjouclt = $_POST['pjouclt'] ?? null;
 
 
 // SE NÃO TIVER VALOR CAI NO NULL E É CONSIDERADO FALSO E CAI NO ERRO
@@ -44,8 +43,20 @@ try {
      * Recebendo as variaveis $email e $senha
      * Que estou enviando na API
      */
+    $stmt->bindParam(':nome', $nome);
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':senha', $senhaHash);
+    $stmt->bindParam(':cpf', $cpf);
+    $stmt->bindParam(':celular', $celular);
+    $stmt->bindParam(':sexo', $sexo);
+    $stmt->bindParam(':datanascimento', $datanascimento);
+    $stmt->bindParam(':cep', $cep);
+    $stmt->bindParam(':endereco', $endereco);
+    $stmt->bindParam(':complemento', $complemento);
+    $stmt->bindParam(':bairro', $bairro);
+    $stmt->bindParam(':cidade', $cidade);
+    $stmt->bindParam(':estado', $estado);
+    $stmt->bindParam(':pjouclt', $pjouclt);
 
     if ($stmt->execute()) {
         // Se der certo, executa esta mensagem de SUCESSO
