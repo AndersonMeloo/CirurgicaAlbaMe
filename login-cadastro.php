@@ -52,15 +52,6 @@
 </form>
 
 
-
-
-
-
-
-
-
-
-
 <!-- < ?php
 
 $telefoneWhatsapp = "(11) 91962-3472";
