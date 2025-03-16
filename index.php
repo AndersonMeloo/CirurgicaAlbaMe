@@ -24,7 +24,7 @@ $descricaoApresentacao1 = "Preservando a Saúde e Bem-estar";
 $descricaoApresentacao2 = "Conheça um pouco mais dos nossos valores para produzir o melhor produto para você";
 $imagemApresentacao = "./imagens/imagens-apresentacao/tirando-pressao.png";
 $beneficiosApresentacao = ["+ SEGURANÇA", "+ DURABILIDADE", "+ AUTENCIDADE", "+ TECNOLOGIA", "+ PRATICIDADE", "+ QUALIDADE"];
-$linkApresentacao = "https://cirurgicaalbame.lojaintegrada.com.br";
+// $linkApresentacao = "https://cirurgicaalbame.lojaintegrada.com.br";
 
 // destaque.php
 $tituloDestaque = "Em Destaque!";
