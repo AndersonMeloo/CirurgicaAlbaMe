@@ -1,15 +1,14 @@
-<?php
+<!-- < ?php
 
 $telefoneWhatsapp = "(11) 91962-3472";
 $emailPrincipal = "cirurgicaalbame@gmail.com";
 $endereco = "São Paulo - SP";
 $iconePerfil = "./imagens/imagens-icon/icon-perfil.svg";
 
-?>
+?> -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
-<!-- < ?php include_once('header.php'); ?> -->
 
 <head>
     <meta charset="UTF-8">
@@ -19,24 +18,23 @@ $iconePerfil = "./imagens/imagens-icon/icon-perfil.svg";
     <title>Login e Cadastro</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./imagens/logo.jpg" type="image/x-icon">
-</head>
+</head> -->
 
-    <!-- < ?php include_once('header.php'); ?> -->
 
-    <section class="login-cadastro">
-        <div class="relative flex justify-center items-center h-[600px] w-[350px] border-4 border-black rounded-2xl bg-gray-50 shadow-lg">
+    <!-- <section class="login-cadastro">
+        <div class="relative flex justify-center items-center h-[600px] w-[350px] border-4 border-black rounded-2xl bg-gray-50 shadow-lg"> -->
             <!-- Topo do celular -->
-            <div class="absolute top-2 left-1/2 transform -translate-x-1/2 bg-black w-16 h-2 rounded-full"></div>
+            <!-- <div class="absolute top-2 left-1/2 transform -translate-x-1/2 bg-black w-16 h-2 rounded-full"></div> -->
 
             <!-- Corpo do celular -->
-            <div class="relative flex justify-center flex-col p-4 w-full">
+            <!-- <div class="relative flex justify-center flex-col p-4 w-full"> -->
                 <!-- Formulário -->
                 <!-- action="login-cadastro.php" -->
 
                 <!-- action="api.php - PEGANDO O ARQUIVO API NO FORMULARIO - FORM -->
-                <form class="form w-full" method="POST" action="api.php">
+                <!-- <form class="form w-full" method="POST" action="api.php"> -->
                     <!-- Email -->
-                    <div class="flex-column mb-4">
+                    <!-- <div class="flex-column mb-4">
                         <label for="email" class="block mb-2 text-sm font-semibold">Email</label>
                         <div class="inputForm flex items-center p-2 border border-gray-300 rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
@@ -46,10 +44,10 @@ $iconePerfil = "./imagens/imagens-icon/icon-perfil.svg";
                             </svg>
                             <input id="email" placeholder="Email" class="input ml-2 p-2 w-full text-sm" type="text" name="email" required>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Senha -->
-                    <div class="flex-column mb-4">
+                    <!-- <div class="flex-column mb-4">
                         <label for="password" class="block mb-2 text-sm font-semibold">Password</label>
                         <div class="inputForm flex items-center p-2 border border-gray-300 rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-64 0 512 512">
@@ -58,24 +56,24 @@ $iconePerfil = "./imagens/imagens-icon/icon-perfil.svg";
                             </svg>
                             <input id="password" placeholder="Senha" class="input ml-2 p-2 w-full text-sm" type="password" name="senha" >
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Lembre de mim -->
-                    <div class="flex-row justify-between mb-4">
+                    <!-- <div class="flex-row justify-between mb-4">
                         <div class="flex items-center">
                             <input type="checkbox" class="mr-2">
                             <label class="text-sm">Lembrar-me</label>
                         </div>
                         <span class="text-sm text-blue-600 cursor-pointer">?</span>
-                    </div>
+                    </div> -->
 
                     <!-- Botão de login -->
-                    <button type="submit" class="button-submit w-full p-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600">Entrar</button>
+                    <!-- <button type="submit" class="button-submit w-full p-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600">Entrar</button>
                     <p class="p text-center mt-4 text-sm">Não tem uma conta? <span class="span text-blue-600 cursor-pointer">Inscrever-se</span></p>
-                    <p class="p text-center mt-2 text-sm text-gray-500">Ou com</p>
+                    <p class="p text-center mt-2 text-sm text-gray-500">Ou com</p> -->
 
                     <!-- Botões sociais -->
-                    <div class="flex justify-between mt-4">
+                    <!-- <div class="flex justify-between mt-4">
                         <button class="btn google p-2 text-black rounded-md flex items-center justify-center w-full mr-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
                                 <path d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456C103.821,274.792,107.225,292.797,113.47,309.408z" style="fill:#FBBB00;"></path>
@@ -84,7 +82,7 @@ $iconePerfil = "./imagens/imagens-icon/icon-perfil.svg";
                                 <path d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0C318.115,0,375.068,22.126,419.404,58.936z" style="fill:#F14336;"></path>
                             </svg>
                             Google
-                        </button>
+                        </button> -->
                         <!-- <button class="btn apple p-2 bg-black text-white rounded-md flex items-center justify-center w-full ml-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22.773 22.773">
                                 <g>
@@ -94,15 +92,15 @@ $iconePerfil = "./imagens/imagens-icon/icon-perfil.svg";
                             </svg>
                             Apple
                         </button> -->
-                    </div>
+                    <!-- </div>
                 </form>
             </div>
         </div>
     </section>
 
 
-    <?php include_once("rodape.php"); ?>
+    < php include_once("rodape.php"); ?>
 
     </body>
 
-</html>
+</html> -->
