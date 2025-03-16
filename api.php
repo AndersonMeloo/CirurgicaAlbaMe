@@ -9,8 +9,8 @@ header('Content-Type: application/json');
 $host = 'localhost';
 
 // DATABASE DA ONDE ESTA PUXANDO A API QUE SE CHAMA USUARIOS ATUALMENTE
-$db = 'usuarios';
-// $db = 'cadastro';
+// $db = 'usuarios';
+$db = 'cadastro';
 
 // USUARIO É O ROOT QUE É DO phpMyAdmin
 $user = 'root';
