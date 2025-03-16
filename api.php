@@ -10,6 +10,7 @@ $host = 'localhost';
 
 // DATABASE DA ONDE ESTA PUXANDO A API QUE SE CHAMA USUARIOS ATUALMENTE
 $db = 'usuarios';
+// $db =  'cadastro-usuarios';
 
 // USUARIO É O ROOT QUE É DO phpMyAdmin
 $user = 'root';
@@ -30,7 +31,3 @@ try {
     // exit; ENCERRA O SCRIPT
     exit;
 }
-
-?>
-
-
