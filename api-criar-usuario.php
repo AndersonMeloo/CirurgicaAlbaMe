@@ -35,7 +35,7 @@ $senhaHash = password_hash($senha, PASSWORD_BCRYPT);
 
 try {
     // ABRINDO CONEXÃO
-    $sql = "INSERT INTO usuarios (email, senha) VALUES (:email, :senha)";
+    $sql = "INSERT INTO usuarios (email, senha, nome, cpf, celular, sexo, datanascimento, cep, endereco, complemento, bairro, cidade, estado, pjouclt ) VALUES (:email, :senha, :nome, :cpf, :celular, :sexo , :datanascimento, :cep, :endereco, :complemento, :bairro, :cidade, :estado, :pjouclt)";
     $stmt = $pdo->prepare($sql);
 
     /**
