@@ -11,7 +11,6 @@ $host = 'localhost';
 // DATABASE DA ONDE ESTA PUXANDO A API QUE SE CHAMA USUARIOS ATUALMENTE
 $db = 'usuarios';
 
-
 // USUARIO É O ROOT QUE É DO phpMyAdmin
 $user = 'root';
 
