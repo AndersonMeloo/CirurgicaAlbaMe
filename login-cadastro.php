@@ -1,38 +1,55 @@
+<form action="api.php" method="POST">
 
+<label for="">Nome</label>
+<input type="text">
 
+<label for="">Email</label>
+<input type="text">
 
+<label for="">Senha</label>
+<input type="text">
 
+<label for="">CPF</label>
+<input type="number">
 
+<label for="">Celular</label>
+<input type="text">
 
+<label id="sexo" for="">Sexo</label>
+<select name="" id="">
+    <option value="masculino">Masculino</option>
+    <option value="femenino">Femenino</option>
+</select>
 
+<label for="">Data de Nascimento</label>
+<input type="date">
 
+<label for="">Cep</label>
+<input type="number">
 
+<label for="">Endereço</label>
+<input type="text">
 
+<label for="">Complemento</label>
+<input type="text">
 
+<label for="">Bairro</label>
+<input type="text">
 
+<label for="">Cidade</label>
+<input type="text">
 
+<label for="">Estado</label>
+<input type="text">
 
+<label for="">Pj ou Clt</label>
+<select name="" id="">
+    <option name="" id="">Pj</option>
+    <option name="" id="">Clt</option>
+</select>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<button type="submit"></button>
+</form>
 
 
 
