@@ -1,51 +1,51 @@
 <form action="api-criar-usuario.php" method="POST">
 
-<label for="">Nome</label>
+<label for="nome">Nome</label>
 <input type="text" name="nome">
 
-<label for="">Email</label>
+<label for="email">Email</label>
 <input type="text" name="email">
 
-<label for="">Senha</label>
+<label for="senha">Senha</label>
 <input type="text" name="senha">
 
-<label for="">CPF</label>
-<input type="number" name="cpf">
+<label for="cpf">CPF</label>
+<input type="text" name="cpf">
 
-<label for="">Celular</label>
+<label for="celular">Celular</label>
 <input type="text" name="celular">
 
 <label id="sexo" for="">Sexo</label>
-<select name="" id="" name="sexo">
+<select id="sexo" name="sexo">
     <option value="masculino">Masculino</option>
     <option value="femenino">Femenino</option>
 </select>
 
-<label for="">Data de Nascimento</label>
+<label for="datanascimento">Data de Nascimento</label>
 <input type="date" name="datanascimento">
 
-<label for="">Cep</label>
+<label for="cep">Cep</label>
 <input type="number" name="cep">
 
-<label for="">Endereço</label>
+<label for="endereco">Endereço</label>
 <input type="text" name="endereco">
 
-<label for="">Complemento</label>
+<label for="complemento">Complemento</label>
 <input type="text" name="complemento">
 
-<label for="">Bairro</label>
+<label for="bairro">Bairro</label>
 <input type="text" name="bairro">
 
-<label for="">Cidade</label>
+<label for="cidade">Cidade</label>
 <input type="text" name="cidade">
 
-<label for="">Estado</label>
+<label for="estado">Estado</label>
 <input type="text" name="estado">
 
-<label for="">Pj ou Clt</label>
-<select name="" id="" name="pjouclt">
-    <option name="" id="">Pj</option>
-    <option name="" id="">Clt</option>
+<label for="pjouclt">Pj ou Clt</label>
+<select name="pjouclt">
+<option value="Pj">Pj</option>
+<option value="Clt">Clt</option>
 </select>
 
 <button type="submit">Cadastrar</button>
