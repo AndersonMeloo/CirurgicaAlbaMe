@@ -1,54 +1,54 @@
-<form action="api.php" method="POST">
+<form action="api-criar-usuario.php" method="POST">
 
 <label for="">Nome</label>
-<input type="text">
+<input type="text" name="nome">
 
 <label for="">Email</label>
-<input type="text">
+<input type="text" name="email">
 
 <label for="">Senha</label>
-<input type="text">
+<input type="text" name="senha">
 
 <label for="">CPF</label>
-<input type="number">
+<input type="number" name="cpf">
 
 <label for="">Celular</label>
-<input type="text">
+<input type="text" name="celular">
 
 <label id="sexo" for="">Sexo</label>
-<select name="" id="">
+<select name="" id="" name="sexo">
     <option value="masculino">Masculino</option>
     <option value="femenino">Femenino</option>
 </select>
 
 <label for="">Data de Nascimento</label>
-<input type="date">
+<input type="date" name="datanascimento">
 
 <label for="">Cep</label>
-<input type="number">
+<input type="number" name="cep">
 
 <label for="">Endereço</label>
-<input type="text">
+<input type="text" name="endereco">
 
 <label for="">Complemento</label>
-<input type="text">
+<input type="text" name="complemento">
 
 <label for="">Bairro</label>
-<input type="text">
+<input type="text" name="bairro">
 
 <label for="">Cidade</label>
-<input type="text">
+<input type="text" name="cidade">
 
 <label for="">Estado</label>
-<input type="text">
+<input type="text" name="estado">
 
 <label for="">Pj ou Clt</label>
-<select name="" id="">
+<select name="" id="" name="pjouclt">
     <option name="" id="">Pj</option>
     <option name="" id="">Clt</option>
 </select>
 
-<button type="submit">Enviar</button>
+<button type="submit">Cadastrar</button>
 </form>
 
 
