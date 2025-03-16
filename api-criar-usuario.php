@@ -21,7 +21,7 @@ $pjouclt = $_POST['pjouclt'] ?? null;
 
 
 // SE NÃO TIVER VALOR CAI NO NULL E É CONSIDERADO FALSO E CAI NO ERRO
-if (!$email || !$senha || $pjouclt || $nome || $cpf || $celular || $sexo || $datanascimento || $cep || $endereco || $complemento || $bairro || $cidade || $estado) {
+if (!$email || !$senha || !$pjouclt || !$nome || !$cpf || !$celular || !$sexo || !$datanascimento || !$cep || !$endereco || !$complemento || !$bairro || !$cidade || $estado) {
     echo json_encode(['sucess' => false, 'message' => 'Preencha todos os campos']);
     exit;
 };
