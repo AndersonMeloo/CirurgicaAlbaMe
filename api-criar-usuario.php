@@ -82,5 +82,4 @@ try {
     echo json_encode(['sucess' => false, "message" => 'Erro ao cadastrar o usuário:' . $e->getMessage()]);
 }
 
-
 ?>
