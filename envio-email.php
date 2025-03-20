@@ -42,7 +42,7 @@ try {
     $mail->isSMTP();  #Send Using SMTP
     $mail->CharSet = 'UTF-8'; #Set the character set of the message
     $mail->Host = 'smtp.gmail.com';
-    $mail->SMTAuth = true; #Set the SMTP server to send through
+    $mail->SMTPAuth = true; #Set the SMTP server to send through
     $mail->Username = 'andersonrodriguesmelo@hotmail.com'; #Enable SMTP authentication
     $mail->Password = 'gerar a senha com o seu gmail'; #SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; #Enable implict TLS encryption
