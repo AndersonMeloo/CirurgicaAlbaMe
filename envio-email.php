@@ -20,6 +20,8 @@ use PHPMailer\PHPMailer\Exception;
 
 $mail = new PHPMailer(true);
 
+$mensagem =  'Conteúdo';
+
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
@@ -37,27 +39,27 @@ $pjouclt = $_POST['pjouclt'];
 
 try {
     #Server Settings
-    $mail - isSMTP();  #Send Using SMTP
+    $mail->isSMTP();  #Send Using SMTP
     $mail->CharSet = 'UTF-8'; #Set the character set of the message
-    $mail->Host = 'smtp-gmail.com';
+    $mail->Host = 'smtp.gmail.com';
     $mail->SMTAuth = true; #Set the SMTP server to send through
     $mail->Username = 'andersonrodriguesmelo@hotmail.com'; #Enable SMTP authentication
-    $mail->Passaword = 'gerar a senha com o seu gmail'; #SMTP password
+    $mail->Password = 'gerar a senha com o seu gmail'; #SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; #Enable implict TLS encryption
     $mail->Port = 587; #TCP port to connect to; use 587 if you
 
 
     #Recipients
     $mail->setFrom('andersonrodriguesmelo@hotmail.com', 'Anderson Melo');
-    $mail->addAdress('andersonrodriguesmelo@hotmail.com'); #Name is optional 
-    $mail->addCC('');
+    $mail->addAddress('andersonrodriguesmelo@hotmail.com'); #Name is optional 
+    $mail->addCC('caique99lucena@gmail.com');
 
     #Content
     $mail->isHTML(true); #Set email format to HTML
-    $mail->Subject = "Mensagem de $nome $sobrenome";
+    $mail->Subject = "Mensagem de $nome";
     $mail->Body = $mensagem . "<br><br> Email para contato: $email";
 
-    $email->send();
+    $mail->send();
     echo '<br>Mensagem enviada com sucesso<br>';
 } catch (Exception $e) {
     echo 'Não foi possivel enviar a mensagem. Erro do Mailer' . $mail->ErrorInfo;
