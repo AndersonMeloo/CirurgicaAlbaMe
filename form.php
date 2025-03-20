@@ -1,4 +1,4 @@
-<form action="envio-email.php">
+<form action="envio-email.php" method="POST">
 
 <label for="nome">Nome</label>
 <input type="text" name="nome" id="nome" required>
