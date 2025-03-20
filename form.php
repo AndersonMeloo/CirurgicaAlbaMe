@@ -8,4 +8,9 @@
 
 <label for="email">E-maill</label>
 <input type="text" name="email" id="email" required>
+
+<label for="mensagem">Mensagem</label>
+<textarea name="mensagem" id="mensagem" required></textarea>
+
+<button type="submit">Enviar</button>
 </form>
