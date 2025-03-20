@@ -23,19 +23,9 @@ $mail = new PHPMailer(true);
 $mensagem =  'Conteúdo';
 
 $nome = $_POST['nome'];
+$sobrenome = $_POST['sobrenome'];
 $email = $_POST['email'];
-$senha = $_POST['senha'];
-$cpf = $_POST['cpf'];
-$celular = $_POST['celular'];
-$sexo = $_POST['sexo'];
-$datanascimento = $_POST['datanascimento'];
-$cep = $_POST['cep'];
-$endereco = $_POST['endereco'];
-$complemento = $_POST['complemento'];
-$bairro = $_POST['bairro'];
-$cidade = $_POST['cidade'];
-$estado = $_POST['estado'];
-$pjouclt = $_POST['pjouclt'];
+
 
 try {
     #Server Settings
