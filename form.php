@@ -1,5 +1,4 @@
-<form action="">
-
+<form action="form.php" method="POST">
     nome
     sobrenome
     email

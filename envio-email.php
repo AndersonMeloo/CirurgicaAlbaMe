@@ -46,7 +46,7 @@ try {
 
     #Content
     $mail->isHTML(true); #Set email format to HTML
-    $mail->Subject = "Mensagem de $nome";
+    $mail->Subject = "Mensagem de $nome $sobrenome";
     $mail->Body = $mensagem . "<br><br> Email para contato: $email";
 
     $mail->send();
