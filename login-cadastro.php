@@ -1,4 +1,4 @@
-<form action="envio-email.php" method="POST">
+<form action="api-criar-usuario.php" method="POST">
 
 <label for="nome">Nome</label>
 <input type="text" name="nome">
