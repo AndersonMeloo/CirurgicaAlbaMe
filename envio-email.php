@@ -20,11 +20,10 @@ use PHPMailer\PHPMailer\Exception;
 
 $mail = new PHPMailer(true);
 
-$mensagem =  'Conteúdo';
-
 $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
 $email = $_POST['email'];
+$mensagem = $_POST['mensagem'];
 
 
 try {
@@ -35,14 +34,14 @@ try {
     // $mail->Host = 'smtp.office365.com';
     $mail->SMTPAuth = true; #Set the SMTP server to send through
     $mail->Username = 'andersonrodriguesmelo@hotmail.com'; #Enable SMTP authentication
-    $mail->Password = 'gerar a senha com o seu gmail'; #SMTP password
+    $mail->Password = 'whxemulaopokxpzh'; #SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; #Enable implict TLS encryption
     $mail->Port = 587; #TCP port to connect to; use 587 if you
 
 
     #Recipients Destinatário
-    $mail->setFrom('andersonrodriguesmelo@hotmail.com', 'Anderson Melo');
-    $mail->addAddress('andersonrodriguesmelo@hotmail.com'); #Name is optional 
+    $mail->setFrom('andersonrodriguesmelo@hotmail.com', 'Mail Project');
+    $mail->addAddress('andersonrodriguesmelo@hotmail.com'); #Name is optional - Para quem vai ser enviado o E-mail
     $mail->addCC('caique99lucena@gmail.com');
 
     #Content Assunto e corpo do e-mail
