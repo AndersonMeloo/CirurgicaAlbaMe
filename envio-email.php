@@ -31,8 +31,8 @@ try {
     #Server Settings
     $mail->isSMTP();  #Send Using SMTP
     $mail->CharSet = 'UTF-8'; #Set the character set of the message
-    // $mail->Host = 'smtp.gmail.com';
-    $mail->Host = 'smtp.office365.com';
+    $mail->Host = 'smtp.gmail.com';
+    // $mail->Host = 'smtp.office365.com';
     $mail->SMTPAuth = true; #Set the SMTP server to send through
     $mail->Username = 'andersonrodriguesmelo@hotmail.com'; #Enable SMTP authentication
     $mail->Password = 'gerar a senha com o seu gmail'; #SMTP password
