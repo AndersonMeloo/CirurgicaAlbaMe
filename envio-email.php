@@ -7,14 +7,14 @@ include_once("PHPMailer/PHPMailer.php");
 
 #STMT Simple Mail Transfer Protocol
 #SMTP é o protocolo utilizado para enviar e-mails de um servidor para outro
-// include_once("PHPMailer/SMTP.php");
+include_once("PHPMailer/SMTP.php");
 
 #Ele trata exceções (erros) que podem ocorrer durante o uso da PHPMailer
 #Caso algo dê errado, você pode capturar e tratar o erro de forma mais amigável e controlada
 include_once("PHPMailer/Exception.php");
 
 #use Serve para importar a classe PHPMailer
-// use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -36,7 +36,7 @@ try {
     // $mail->Host = 'smtp.office365.com';
     $mail->SMTPAuth = true; #Set the SMTP server to send through
     $mail->Username = 'andersonrodriguesmelo@hotmail.com'; #Enable SMTP authentication
-    $mail->Password = 'whxemulaopokxpzh'; #SMTP password
+    $mail->Password = 'as'; #SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; #Enable implict TLS encryption
     $mail->Port = 587; #TCP port to connect to; use 587 if you
 
