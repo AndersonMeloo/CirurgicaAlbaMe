@@ -31,7 +31,7 @@ try {
     #Server Settings
     $mail->isSMTP();  #Send Using SMTP
     $mail->CharSet = 'UTF-8'; #Set the character set of the message
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'smtp.gmail.com'; #Server PHPMailer Gmail
     // $mail->Host = 'smtp.office365.com';
     $mail->SMTPAuth = true; #Set the SMTP server to send through
     $mail->Username = 'andersonrodriguesmelo@hotmail.com'; #Enable SMTP authentication
@@ -40,16 +40,17 @@ try {
     $mail->Port = 587; #TCP port to connect to; use 587 if you
 
 
-    #Recipients
+    #Recipients Destinatário
     $mail->setFrom('andersonrodriguesmelo@hotmail.com', 'Anderson Melo');
     $mail->addAddress('andersonrodriguesmelo@hotmail.com'); #Name is optional 
     $mail->addCC('caique99lucena@gmail.com');
 
-    #Content
+    #Content Assunto e corpo do e-mail
     $mail->isHTML(true); #Set email format to HTML
     $mail->Subject = "Mensagem de $nome $sobrenome";
     $mail->Body = $mensagem . "<br><br> Email para contato: $email";
 
+    #Evniar o e-mail
     $mail->send();
     echo '<br>Mensagem enviada com sucesso<br>';
 } catch (Exception $e) {
