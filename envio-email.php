@@ -14,8 +14,8 @@ include_once("PHPMailer/PHPMailer.php");
 include_once("PHPMailer/Exception.php");
 
 #use Serve para importar a classe PHPMailer
-use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 var_dump(class_exists('PHPMailer\\PHPMailer\\SMTP'));
