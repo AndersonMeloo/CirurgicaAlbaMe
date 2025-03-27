@@ -14,7 +14,7 @@ include_once("PHPMailer/SMTP.php");
 include_once("PHPMailer/Exception.php");
 
 #use Serve para importar a classe PHPMailer
-use PHPMailer\PHPMailer\SMTP;
+// use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -51,7 +51,7 @@ try {
     $mail->Subject = "Mensagem de $nome $sobrenome";
     $mail->Body = $mensagem . "<br><br> Email para contato: $email";
 
-    #Evniar o e-mail
+    #Enviar o e-mail
     $mail->send();
     echo '<br>Mensagem enviada com sucesso<br>';
 } catch (Exception $e) {
