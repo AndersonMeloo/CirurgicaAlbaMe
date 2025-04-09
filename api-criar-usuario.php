@@ -106,7 +106,7 @@ if ($method == 'POST') {
     if ($email) {
         try {
             $sql = "SELECT * FROM usuarios WHERE email = :email";
-            $stmt = $pdo->prepare($sql);
+            $stmt = $pdo->prepare(query: $sql);
             $stmt->bindParam(':email', $email);
 
             if ($stmt->execute()) {
