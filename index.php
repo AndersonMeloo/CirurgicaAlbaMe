@@ -59,6 +59,7 @@ $imagemProdutos8 = "./imagens/imagens-produtos-geral/Andadores.jpg";
 <?php include('parallax2.php'); ?>
 <?php include('produtos-geral.php'); ?>
 <?php include_once('rodape.php'); ?>
+<?php include 'login-cadastro.php'; ?>
 
 <!-- 
     include() 
