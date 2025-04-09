@@ -86,43 +86,17 @@ if ($method == 'POST') {
         echo json_encode(['sucess' => false, "message" => 'Erro ao cadastrar o usuário:' . $e->getMessage()]);
     }
 } elseif ($method == 'GET') {
-    #Lógica para Requisição GET
+    try {
+        $sql = "SELECT * FROM usuarios";
+        $stmt = $pdo->query($sql);
 
-    $nome = $_GET['nome'] ?? null;
-    $email = $_GET['email'] ?? null;
-    $senha = $_GET['senha'] ?? null;
-    $cpf = $_GET['cpf'] ?? null;
-    $celular = $_GET['celular'] ?? null;
-    $sexo = $_GET['sexo'] ?? null;
-    $datanascimento = $_GET['datanascimento'] ?? null;
-    $cep = $_GET['cep'] ?? null;
-    $endereco = $_GET['endereco'] ?? null;
-    $complemento = $_GET['complemento'] ?? null;
-    $bairro = $_GET['bairro'] ?? null;
-    $cidade = $_GET['cidade'] ?? null;
-    $estado = $_GET['estado'] ?? null;
-    $pjouclt = $_GET['pjouclt'] ?? null;
-
-    if ($email) {
-        try {
-            $sql = "SELECT * FROM usuarios WHERE email = :email";
-            $stmt = $pdo->prepare(query: $sql);
-            $stmt->bindParam(':email', $email);
-
-            if ($stmt->execute()) {
-                $user = $stmt->fetch(PDO::FETCH_ASSOC);
-                if ($user) {
-                    echo json_encode(['sucess' => true, 'user' => $user]);
-                } else {
-                    echo json_encode(['sucess' => false, 'message' => 'Usuário não encontrado']);
-                }
-            } else {
-                echo json_encode(['sucess' => false, 'message' => 'Erro ao buscar usuário']);
-            }
-        } catch (Exception $e) {
-            echo json_encode(['sucess' => false, 'message' => 'Erro ao buscar o usuário:' . $e->getMessage()]);
+        $usuarios = [];
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $usuarios[] = $row;
         }
-    } else {
-        echo json_encode(['sucess' => false, 'message' => 'Parâmetro "email" não fornecido']);
+
+        echo json_encode($usuarios);
+    } catch (Exception $e) {
+        echo json_encode(['sucess' => false, 'message' => 'Erro ao buscar usuários: ' . $e->getMessage()]);
     }
 }
