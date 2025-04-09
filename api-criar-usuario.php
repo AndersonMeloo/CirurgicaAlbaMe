@@ -88,7 +88,21 @@ if ($method == 'POST') {
 } elseif ($method == 'GET') {
     #Lógica para Requisição GET
 
+    $nome = $_GET['nome'] ?? null;
     $email = $_GET['email'] ?? null;
+    $senha = $_GET['senha'] ?? null;
+    $cpf = $_GET['cpf'] ?? null;
+    $celular = $_GET['celular'] ?? null;
+    $sexo = $_GET['sexo'] ?? null;
+    $datanascimento = $_GET['datanascimento'] ?? null;
+    $cep = $_GET['cep'] ?? null;
+    $endereco = $_GET['endereco'] ?? null;
+    $complemento = $_GET['complemento'] ?? null;
+    $bairro = $_GET['bairro'] ?? null;
+    $cidade = $_GET['cidade'] ?? null;
+    $estado = $_GET['estado'] ?? null;
+    $pjouclt = $_GET['pjouclt'] ?? null;
+
     if ($email) {
         try {
             $sql = "SELECT * FROM usuarios WHERE email = :email";
